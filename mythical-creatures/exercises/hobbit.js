@@ -5,23 +5,23 @@ class Hobbit {
         this.adult = false;
         this.old = false;
         this.hasRing = false;
-        this.celebrateBirthday = function() {
-            this.age = this.age + 1;
-            if (this.age < 33) {
-                this.adult = false;
-            } else if (this.age > 100) {
-                this.old = true;
-            } else {
-                this.adult = true;
-            }
-        };
-        this.getRing = function() {
-            if (this.name === "Frodo") {
-                this.hasRing = true;
-                return "Here is the ring!";
-            } else {
-                return "You can't have it!";
-            };
+    };
+    celebrateBirthday() {
+        this.age = this.age + 1;
+        if (this.age < 33) {
+            this.adult = false;
+        } else if (this.age > 100) {
+            this.old = true;
+        } else {
+            this.adult = true;
+        }
+    };
+    getRing() {
+        if (this.name === "Frodo") {
+            this.hasRing = true;
+            return "Here is the ring!";
+        } else {
+            return "You can't have it!";
         };
     };
 };

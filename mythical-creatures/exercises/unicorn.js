@@ -2,15 +2,15 @@ class Unicorn {
   constructor(name, color = "white") {
     this.name = name;
     this.color = color;
-    this.isWhite = function () {
-      if (color !== "white") {
-        return false;
-      }; 
-    };
-    this.says = function (msg) {
-      return `**;* ${msg} *;**`;
-    }
-  }
-}
+  };
+  isWhite() {
+    if (this.color !== "white") {
+      return false;
+    }; 
+  };
+  says(msg) {
+    return `**;* ${msg} *;**`;
+  };
+};
 
 module.exports = Unicorn;

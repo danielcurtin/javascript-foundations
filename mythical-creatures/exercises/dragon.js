@@ -1,18 +1,18 @@
 class Dragon {
     constructor(name, rider) {
-        var fed = 0;
         this.name = name;
         this.rider = rider;
-        this.greet = function () {
-            return `Hi, ${rider}!`;
-        };
         this.hungry = true;
-        this.eat = function() { 
-            if (fed === 2) {
-                this.hungry = false;
-            } else {
-                fed = fed + 1;
-            };
+        this.fedNumTimes = 0;
+    };
+    greet() {
+        return `Hi, ${this.rider}!`;
+    };
+    eat() { 
+        if (this.fedNumTimes === 2) {
+            this.hungry = false;
+        } else {
+            this.fedNumTimes = this.fedNumTimes + 1;
         };
     };
 };
