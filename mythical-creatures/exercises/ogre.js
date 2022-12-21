@@ -17,10 +17,7 @@ class Ogre {
         };
     };
 
-    swingAt(humanOb) {
-        if (humanOb.noticedOgre === true) {
-            this.swings += 1;
-        };
+    swingAt() {
         this.swings += 1;
     };
 
